@@ -27,27 +27,21 @@ let sampleRoutines: [Routine] = [
             "Vacuum first floor",
             "Brush teeth",
             "Deodorant",
-            "Style hair",
+            "Style hair?",
             "Coffee",
+            "Lotion hands",
             "Sit down and plan for the day",
-        ]
-    ),
-    Routine(
-        title: "Work - Morning",
-        tasks: [
-            "Check emails",
-            "Standup meeting",
-            "Review PRs",
         ]
     ),
     Routine(
         title: "Wind down",
         tasks: [
-            "Run 3 miles",
-            "Push-ups",
-            "Stretching",
-            "Shower",
-            "Read",
+            "Floss & Brush Teeth",
+            "Clean face",
+            "Gameboy for 15 minutes",
+            "Read book",
+            "Refill kitten water",
+            "Put away kitten",
         ]
     ),
 ]

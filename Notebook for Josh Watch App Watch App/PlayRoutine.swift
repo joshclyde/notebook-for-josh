@@ -69,5 +69,23 @@ struct PlayRoutine: View {
                 }
             }
         }
+        .onAppear {
+            ActiveRoutineState.start(
+                routineTitle: routine.title,
+                taskName: routine.tasks[currentTaskIndex],
+                startDate: startDate
+            )
+        }
+        .onDisappear {
+            ActiveRoutineState.complete()
+        }
+        .onChange(of: currentTaskIndex) {
+            ActiveRoutineState.updateTask(routine.tasks[currentTaskIndex])
+        }
+        .onChange(of: isCompleted) {
+            if isCompleted {
+                ActiveRoutineState.complete()
+            }
+        }
     }
 }

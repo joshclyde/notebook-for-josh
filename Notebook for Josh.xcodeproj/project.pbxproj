@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2F13317F2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2F13317E2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F1331BA2F7C56D70054D43C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1331B92F7C56D70054D43C /* WidgetKit.framework */; };
+		2F1331BC2F7C56D70054D43C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1331BB2F7C56D70054D43C /* SwiftUI.framework */; };
+		2F1331CB2F7C56D90054D43C /* Notebook for Josh Watch App ComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2F1331B72F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,13 @@
 			remoteGlobalIDString = 2F13317D2F7AC7FC0054D43C;
 			remoteInfo = "Notebook for Josh Watch App Watch App";
 		};
+		2F1331C92F7C56D90054D43C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F13313D2F7ABCA50054D43C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F1331B62F7C56D70054D43C;
+			remoteInfo = "Notebook for Josh Watch App ComplicationExtension";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +70,17 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F1331D02F7C56D90054D43C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2F1331CB2F7C56D90054D43C /* Notebook for Josh Watch App ComplicationExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +91,10 @@
 		2F13317E2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notebook for Josh Watch App Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F13318D2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notebook for Josh Watch App Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F1331972F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notebook for Josh Watch App Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1331B72F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notebook for Josh Watch App ComplicationExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1331B92F7C56D70054D43C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2F1331BB2F7C56D70054D43C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2F1331D52F7C57380054D43C /* Notebook for Josh Watch App ComplicationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Notebook for Josh Watch App ComplicationExtension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -79,6 +104,13 @@
 				Info.plist,
 			);
 			target = 2F1331442F7ABCA50054D43C /* Notebook for Josh */;
+		};
+		2F1331CC2F7C56D90054D43C /* Exceptions for "Notebook for Josh Watch App Complication" folder in "Notebook for Josh Watch App ComplicationExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2F1331B62F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -114,6 +146,14 @@
 		2F13319A2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Notebook for Josh Watch App Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		2F1331BD2F7C56D70054D43C /* Notebook for Josh Watch App Complication */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2F1331CC2F7C56D90054D43C /* Exceptions for "Notebook for Josh Watch App Complication" folder in "Notebook for Josh Watch App ComplicationExtension" target */,
+			);
+			path = "Notebook for Josh Watch App Complication";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -161,18 +201,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F1331B42F7C56D70054D43C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1331BC2F7C56D70054D43C /* SwiftUI.framework in Frameworks */,
+				2F1331BA2F7C56D70054D43C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2F13313C2F7ABCA50054D43C = {
 			isa = PBXGroup;
 			children = (
+				2F1331D52F7C57380054D43C /* Notebook for Josh Watch App ComplicationExtension.entitlements */,
 				2F1331472F7ABCA50054D43C /* Notebook for Josh */,
 				2F1331592F7ABCA80054D43C /* Notebook for JoshTests */,
 				2F1331632F7ABCA80054D43C /* Notebook for JoshUITests */,
 				2F1331822F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */,
 				2F1331902F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests */,
 				2F13319A2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests */,
+				2F1331BD2F7C56D70054D43C /* Notebook for Josh Watch App Complication */,
+				2F1331B82F7C56D70054D43C /* Frameworks */,
 				2F1331462F7ABCA50054D43C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -187,8 +239,18 @@
 				2F13317E2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App.app */,
 				2F13318D2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests.xctest */,
 				2F1331972F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests.xctest */,
+				2F1331B72F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2F1331B82F7C56D70054D43C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F1331B92F7C56D70054D43C /* WidgetKit.framework */,
+				2F1331BB2F7C56D70054D43C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,10 +350,12 @@
 				2F13317A2F7AC7FC0054D43C /* Sources */,
 				2F13317B2F7AC7FC0054D43C /* Frameworks */,
 				2F13317C2F7AC7FC0054D43C /* Resources */,
+				2F1331D02F7C56D90054D43C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2F1331CA2F7C56D90054D43C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				2F1331822F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */,
@@ -349,6 +413,28 @@
 			productReference = 2F1331972F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		2F1331B62F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F1331CD2F7C56D90054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App ComplicationExtension" */;
+			buildPhases = (
+				2F1331B32F7C56D70054D43C /* Sources */,
+				2F1331B42F7C56D70054D43C /* Frameworks */,
+				2F1331B52F7C56D70054D43C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2F1331BD2F7C56D70054D43C /* Notebook for Josh Watch App Complication */,
+			);
+			name = "Notebook for Josh Watch App ComplicationExtension";
+			packageProductDependencies = (
+			);
+			productName = "Notebook for Josh Watch App ComplicationExtension";
+			productReference = 2F1331B72F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -384,6 +470,9 @@
 						CreatedOnToolsVersion = 26.4;
 						TestTargetID = 2F13317D2F7AC7FC0054D43C;
 					};
+					2F1331B62F7C56D70054D43C = {
+						CreatedOnToolsVersion = 26.4;
+					};
 				};
 			};
 			buildConfigurationList = 2F1331402F7ABCA50054D43C /* Build configuration list for PBXProject "Notebook for Josh" */;
@@ -407,6 +496,7 @@
 				2F13317D2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */,
 				2F13318C2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests */,
 				2F1331962F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests */,
+				2F1331B62F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -461,6 +551,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F1331B52F7C56D70054D43C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -506,6 +603,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F1331B32F7C56D70054D43C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -533,6 +637,11 @@
 			isa = PBXTargetDependency;
 			target = 2F13317D2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */;
 			targetProxy = 2F1331982F7AC7FE0054D43C /* PBXContainerItemProxy */;
+		};
+		2F1331CA2F7C56D90054D43C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F1331B62F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension */;
+			targetProxy = 2F1331C92F7C56D90054D43C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -850,6 +959,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Notebook for Josh Watch App Watch App/Notebook for Josh Watch App Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
@@ -883,6 +993,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Notebook for Josh Watch App Watch App/Notebook for Josh Watch App Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
@@ -1039,6 +1150,75 @@
 			};
 			name = Release;
 		};
+		2F1331CE2F7C56D90054D43C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Notebook for Josh Watch App ComplicationExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Notebook for Josh Watch App Complication/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Notebook for Josh Watch App Complication";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App.watchkitapp.Notebook-for-Josh-Watch-App-Complication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Debug;
+		};
+		2F1331CF2F7C56D90054D43C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Notebook for Josh Watch App ComplicationExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Notebook for Josh Watch App Complication/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Notebook for Josh Watch App Complication";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App.watchkitapp.Notebook-for-Josh-Watch-App-Complication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1110,6 +1290,15 @@
 			buildConfigurations = (
 				2F1331AA2F7AC7FE0054D43C /* Debug */,
 				2F1331AB2F7AC7FE0054D43C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F1331CD2F7C56D90054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App ComplicationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F1331CE2F7C56D90054D43C /* Debug */,
+				2F1331CF2F7C56D90054D43C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
