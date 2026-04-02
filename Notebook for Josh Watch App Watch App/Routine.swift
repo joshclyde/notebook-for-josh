@@ -16,10 +16,13 @@ let sampleRoutines: [Routine] = [
     Routine(
         title: "Wake up",
         tasks: [
+            "Get out of bed",
+            "Make the bed",
             "Let Daisy out of the attic",
             "Feed the cats",
             "Drink water",
-            "Eat yogurt",
+            "Allergy medicine (Allegra)",
+            "Eat yogurt (while doing next tasks)",
             "Refill cat's water",
             "Put away dishes",
             "Drink water",
@@ -36,11 +39,15 @@ let sampleRoutines: [Routine] = [
     Routine(
         title: "Wind down",
         tasks: [
+            "Clean the dishes",
+            "Run the diswaher?",
+            "Clean the kitchen counter",
+            "Refill kitten water",
+            "Check kitten food in auto feeder",
             "Floss & Brush Teeth",
             "Clean face",
-            "Gameboy for 15 minutes",
+            "Gameboy (15 minutes)",
             "Read book",
-            "Refill kitten water",
             "Put away kitten",
         ]
     ),
