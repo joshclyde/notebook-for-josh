@@ -27,3 +27,7 @@ fastlane/test_output
 # Playgrounds
 timeline.xctimeline
 playground.xcworkspace
+
+# Claude
+.claude/worktrees/
+
