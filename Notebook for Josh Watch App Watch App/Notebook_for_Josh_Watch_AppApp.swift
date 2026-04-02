@@ -12,6 +12,9 @@ struct Notebook_for_Josh_Watch_App_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    NotificationManager.requestAuthorizationAndSchedule()
+                }
         }
     }
 }
