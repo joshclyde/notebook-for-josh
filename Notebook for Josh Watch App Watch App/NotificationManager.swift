@@ -17,10 +17,15 @@ struct NotificationManager {
     private static func scheduleRoutineNotifications() {
         let center = UNUserNotificationCenter.current()
         // Remove any previously scheduled routine reminders before re-scheduling
-        center.removePendingNotificationRequests(withIdentifiers: ["wakeup-routine", "winddown-routine"])
+        center.removePendingNotificationRequests(withIdentifiers: ["wakeup-routine", "winddown-routine", "foo", "foo2", "foo3"])
 
         center.add(makeRequest(id: "wakeup-routine", title: "Wake Up", hour: 6, minute: 30))
         center.add(makeRequest(id: "winddown-routine", title: "Wind Down", hour: 21, minute: 30))
+        
+        // To test you can just uncomment these lines and change the times to a few minutes from now then install on watch
+        // center.add(makeRequest(id: "foo", title: "Foo", hour: 18, minute: 56))
+        // center.add(makeRequest(id: "foo2", title: "Foo", hour: 18, minute: 58))
+        // center.add(makeRequest(id: "foo3", title: "Foo", hour: 18, minute: 59))
     }
 
     private static func makeRequest(id: String, title: String, hour: Int, minute: Int) -> UNNotificationRequest {
