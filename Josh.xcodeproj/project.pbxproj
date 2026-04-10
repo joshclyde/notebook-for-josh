@@ -76,8 +76,6 @@
 		2F1331B72F7C56D70054D43C /* DailyPlannerWatchOSComplication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyPlannerWatchOSComplication.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F1331B92F7C56D70054D43C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		2F1331BB2F7C56D70054D43C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		2F1331D52F7C57380054D43C /* Notebook for Josh Watch App ComplicationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Notebook for Josh Watch App ComplicationExtension.entitlements"; sourceTree = "<group>"; };
-		2FAF63312F88045300C1C2E8 /* Josh - iOS App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Josh - iOS App.entitlements"; sourceTree = "<group>"; };
 		2FC237CD2F89302F00046917 /* DailyPlannerShared */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DailyPlannerShared; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,8 +200,6 @@
 		2F13313C2F7ABCA50054D43C = {
 			isa = PBXGroup;
 			children = (
-				2FAF63312F88045300C1C2E8 /* Josh - iOS App.entitlements */,
-				2F1331D52F7C57380054D43C /* Notebook for Josh Watch App ComplicationExtension.entitlements */,
 				2FC237CD2F89302F00046917 /* DailyPlannerShared */,
 				2F1331472F7ABCA50054D43C /* DailyPlanneriOSApp */,
 				2F1331592F7ABCA80054D43C /* Notebook for JoshTests */,
@@ -1080,7 +1076,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Notebook for Josh Watch App ComplicationExtension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = DailyPlannerWatchOSComplication/DailyPlannerWatchOSComplication.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
@@ -1114,7 +1110,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Notebook for Josh Watch App ComplicationExtension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = DailyPlannerWatchOSComplication/DailyPlannerWatchOSComplication.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
