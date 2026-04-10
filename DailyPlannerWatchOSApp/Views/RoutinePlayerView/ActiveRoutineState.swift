@@ -5,12 +5,11 @@
 
 import Foundation
 import WidgetKit
+import DailyPlannerShared
 
 struct ActiveRoutineState {
-    static let appGroupID = "group.joshclyde.Notebook-for-Josh-Watch-App"
-
     private static var sharedDefaults: UserDefaults? {
-        UserDefaults(suiteName: appGroupID)
+        UserDefaults(suiteName: Constants.Identifiers.watchOSAppGroupContainer)
     }
 
     static var isActive: Bool {

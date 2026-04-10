@@ -4,8 +4,9 @@
 //
 
 import SwiftUI
+import DailyPlannerShared
 
-struct PlayRoutine: View {
+struct RoutinePlayerView: View {
     let routine: Routine
 
     @State private var currentTaskIndex = 0

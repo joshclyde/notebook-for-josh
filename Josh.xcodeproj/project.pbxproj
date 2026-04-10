@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F13317F2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2F13317E2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2F1331BA2F7C56D70054D43C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1331B92F7C56D70054D43C /* WidgetKit.framework */; };
 		2F1331BC2F7C56D70054D43C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1331BB2F7C56D70054D43C /* SwiftUI.framework */; };
-		2F1331CB2F7C56D90054D43C /* Notebook for Josh Watch App ComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2F1331B72F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F1331CB2F7C56D90054D43C /* DailyPlannerWatchOSComplication.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2F1331B72F7C56D70054D43C /* DailyPlannerWatchOSComplication.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2F78D9AE2F89439D00E71484 /* DailyPlannerShared in Frameworks */ = {isa = PBXBuildFile; productRef = 2F78D9AD2F89439D00E71484 /* DailyPlannerShared */; };
+		2FC237CF2F89307B00046917 /* DailyPlannerShared in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC237CE2F89307B00046917 /* DailyPlannerShared */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +28,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2F1331442F7ABCA50054D43C;
 			remoteInfo = "Notebook for Josh";
-		};
-		2F1331802F7AC7FC0054D43C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F13313D2F7ABCA50054D43C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2F13317D2F7AC7FC0054D43C;
-			remoteInfo = "Notebook for Josh Watch App Watch App";
 		};
 		2F13318E2F7AC7FE0054D43C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -59,24 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2F1331A22F7AC7FE0054D43C /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				2F13317F2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2F1331D02F7C56D90054D43C /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				2F1331CB2F7C56D90054D43C /* Notebook for Josh Watch App ComplicationExtension.appex in Embed Foundation Extensions */,
+				2F1331CB2F7C56D90054D43C /* DailyPlannerWatchOSComplication.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,43 +67,44 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2F1331452F7ABCA50054D43C /* Notebook for Josh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notebook for Josh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1331562F7ABCA80054D43C /* Notebook for JoshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notebook for JoshTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1331602F7ABCA80054D43C /* Notebook for JoshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notebook for JoshUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1331792F7AC7FC0054D43C /* Notebook for Josh Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notebook for Josh Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F13317E2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notebook for Josh Watch App Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F13318D2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notebook for Josh Watch App Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1331972F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notebook for Josh Watch App Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F1331B72F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notebook for Josh Watch App ComplicationExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1331452F7ABCA50054D43C /* DailyPlanneriOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPlanneriOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1331562F7ABCA80054D43C /* Josh - iOS App - Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Josh - iOS App - Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1331602F7ABCA80054D43C /* Josh - iOS App - UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Josh - iOS App - UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F13317E2F7AC7FC0054D43C /* DailyPlannerWatchOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPlannerWatchOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F13318D2F7AC7FE0054D43C /* Josh - watchOS App - Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Josh - watchOS App - Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1331972F7AC7FE0054D43C /* Josh - watchOS App - UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Josh - watchOS App - UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1331B72F7C56D70054D43C /* DailyPlannerWatchOSComplication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyPlannerWatchOSComplication.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F1331B92F7C56D70054D43C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		2F1331BB2F7C56D70054D43C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		2F1331D52F7C57380054D43C /* Notebook for Josh Watch App ComplicationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Notebook for Josh Watch App ComplicationExtension.entitlements"; sourceTree = "<group>"; };
+		2FAF63312F88045300C1C2E8 /* Josh - iOS App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Josh - iOS App.entitlements"; sourceTree = "<group>"; };
+		2FC237CD2F89302F00046917 /* DailyPlannerShared */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DailyPlannerShared; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		2F1331682F7ABCA80054D43C /* Exceptions for "Notebook for Josh" folder in "Notebook for Josh" target */ = {
+		2F1331682F7ABCA80054D43C /* Exceptions for "DailyPlanneriOSApp" folder in "DailyPlanneriOSApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 2F1331442F7ABCA50054D43C /* Notebook for Josh */;
+			target = 2F1331442F7ABCA50054D43C /* DailyPlanneriOSApp */;
 		};
-		2F1331CC2F7C56D90054D43C /* Exceptions for "Notebook for Josh Watch App Complication" folder in "Notebook for Josh Watch App ComplicationExtension" target */ = {
+		2F1331CC2F7C56D90054D43C /* Exceptions for "DailyPlannerWatchOSComplication" folder in "DailyPlannerWatchOSComplication" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 2F1331B62F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension */;
+			target = 2F1331B62F7C56D70054D43C /* DailyPlannerWatchOSComplication */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2F1331472F7ABCA50054D43C /* Notebook for Josh */ = {
+		2F1331472F7ABCA50054D43C /* DailyPlanneriOSApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				2F1331682F7ABCA80054D43C /* Exceptions for "Notebook for Josh" folder in "Notebook for Josh" target */,
+				2F1331682F7ABCA80054D43C /* Exceptions for "DailyPlanneriOSApp" folder in "DailyPlanneriOSApp" target */,
 			);
-			path = "Notebook for Josh";
+			path = DailyPlanneriOSApp;
 			sourceTree = "<group>";
 		};
 		2F1331592F7ABCA80054D43C /* Notebook for JoshTests */ = {
@@ -133,9 +117,9 @@
 			path = "Notebook for JoshUITests";
 			sourceTree = "<group>";
 		};
-		2F1331822F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */ = {
+		2F1331822F7AC7FC0054D43C /* DailyPlannerWatchOSApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Notebook for Josh Watch App Watch App";
+			path = DailyPlannerWatchOSApp;
 			sourceTree = "<group>";
 		};
 		2F1331902F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests */ = {
@@ -148,12 +132,12 @@
 			path = "Notebook for Josh Watch App Watch AppUITests";
 			sourceTree = "<group>";
 		};
-		2F1331BD2F7C56D70054D43C /* Notebook for Josh Watch App Complication */ = {
+		2F1331BD2F7C56D70054D43C /* DailyPlannerWatchOSComplication */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				2F1331CC2F7C56D90054D43C /* Exceptions for "Notebook for Josh Watch App Complication" folder in "Notebook for Josh Watch App ComplicationExtension" target */,
+				2F1331CC2F7C56D90054D43C /* Exceptions for "DailyPlannerWatchOSComplication" folder in "DailyPlannerWatchOSComplication" target */,
 			);
-			path = "Notebook for Josh Watch App Complication";
+			path = DailyPlannerWatchOSComplication;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -163,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F78D9AE2F89439D00E71484 /* DailyPlannerShared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC237CF2F89307B00046917 /* DailyPlannerShared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,14 +202,16 @@
 		2F13313C2F7ABCA50054D43C = {
 			isa = PBXGroup;
 			children = (
+				2FAF63312F88045300C1C2E8 /* Josh - iOS App.entitlements */,
 				2F1331D52F7C57380054D43C /* Notebook for Josh Watch App ComplicationExtension.entitlements */,
-				2F1331472F7ABCA50054D43C /* Notebook for Josh */,
+				2FC237CD2F89302F00046917 /* DailyPlannerShared */,
+				2F1331472F7ABCA50054D43C /* DailyPlanneriOSApp */,
 				2F1331592F7ABCA80054D43C /* Notebook for JoshTests */,
 				2F1331632F7ABCA80054D43C /* Notebook for JoshUITests */,
-				2F1331822F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */,
+				2F1331822F7AC7FC0054D43C /* DailyPlannerWatchOSApp */,
 				2F1331902F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests */,
 				2F13319A2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests */,
-				2F1331BD2F7C56D70054D43C /* Notebook for Josh Watch App Complication */,
+				2F1331BD2F7C56D70054D43C /* DailyPlannerWatchOSComplication */,
 				2F1331B82F7C56D70054D43C /* Frameworks */,
 				2F1331462F7ABCA50054D43C /* Products */,
 			);
@@ -232,14 +220,13 @@
 		2F1331462F7ABCA50054D43C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F1331452F7ABCA50054D43C /* Notebook for Josh.app */,
-				2F1331562F7ABCA80054D43C /* Notebook for JoshTests.xctest */,
-				2F1331602F7ABCA80054D43C /* Notebook for JoshUITests.xctest */,
-				2F1331792F7AC7FC0054D43C /* Notebook for Josh Watch App.app */,
-				2F13317E2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App.app */,
-				2F13318D2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests.xctest */,
-				2F1331972F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests.xctest */,
-				2F1331B72F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension.appex */,
+				2F1331452F7ABCA50054D43C /* DailyPlanneriOSApp.app */,
+				2F1331562F7ABCA80054D43C /* Josh - iOS App - Tests.xctest */,
+				2F1331602F7ABCA80054D43C /* Josh - iOS App - UI Tests.xctest */,
+				2F13317E2F7AC7FC0054D43C /* DailyPlannerWatchOSApp.app */,
+				2F13318D2F7AC7FE0054D43C /* Josh - watchOS App - Tests.xctest */,
+				2F1331972F7AC7FE0054D43C /* Josh - watchOS App - UI Tests.xctest */,
+				2F1331B72F7C56D70054D43C /* DailyPlannerWatchOSComplication.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,9 +243,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F1331442F7ABCA50054D43C /* Notebook for Josh */ = {
+		2F1331442F7ABCA50054D43C /* DailyPlanneriOSApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F1331692F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh" */;
+			buildConfigurationList = 2F1331692F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "DailyPlanneriOSApp" */;
 			buildPhases = (
 				2F1331412F7ABCA50054D43C /* Sources */,
 				2F1331422F7ABCA50054D43C /* Frameworks */,
@@ -269,18 +256,19 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2F1331472F7ABCA50054D43C /* Notebook for Josh */,
+				2F1331472F7ABCA50054D43C /* DailyPlanneriOSApp */,
 			);
-			name = "Notebook for Josh";
+			name = DailyPlanneriOSApp;
 			packageProductDependencies = (
+				2F78D9AD2F89439D00E71484 /* DailyPlannerShared */,
 			);
 			productName = "Notebook for Josh";
-			productReference = 2F1331452F7ABCA50054D43C /* Notebook for Josh.app */;
+			productReference = 2F1331452F7ABCA50054D43C /* DailyPlanneriOSApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F1331552F7ABCA80054D43C /* Notebook for JoshTests */ = {
+		2F1331552F7ABCA80054D43C /* Josh - iOS App - Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F13316E2F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "Notebook for JoshTests" */;
+			buildConfigurationList = 2F13316E2F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "Josh - iOS App - Tests" */;
 			buildPhases = (
 				2F1331522F7ABCA80054D43C /* Sources */,
 				2F1331532F7ABCA80054D43C /* Frameworks */,
@@ -294,16 +282,16 @@
 			fileSystemSynchronizedGroups = (
 				2F1331592F7ABCA80054D43C /* Notebook for JoshTests */,
 			);
-			name = "Notebook for JoshTests";
+			name = "Josh - iOS App - Tests";
 			packageProductDependencies = (
 			);
 			productName = "Notebook for JoshTests";
-			productReference = 2F1331562F7ABCA80054D43C /* Notebook for JoshTests.xctest */;
+			productReference = 2F1331562F7ABCA80054D43C /* Josh - iOS App - Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2F13315F2F7ABCA80054D43C /* Notebook for JoshUITests */ = {
+		2F13315F2F7ABCA80054D43C /* Josh - iOS App - UI Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F1331712F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "Notebook for JoshUITests" */;
+			buildConfigurationList = 2F1331712F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "Josh - iOS App - UI Tests" */;
 			buildPhases = (
 				2F13315C2F7ABCA80054D43C /* Sources */,
 				2F13315D2F7ABCA80054D43C /* Frameworks */,
@@ -317,35 +305,16 @@
 			fileSystemSynchronizedGroups = (
 				2F1331632F7ABCA80054D43C /* Notebook for JoshUITests */,
 			);
-			name = "Notebook for JoshUITests";
+			name = "Josh - iOS App - UI Tests";
 			packageProductDependencies = (
 			);
 			productName = "Notebook for JoshUITests";
-			productReference = 2F1331602F7ABCA80054D43C /* Notebook for JoshUITests.xctest */;
+			productReference = 2F1331602F7ABCA80054D43C /* Josh - iOS App - UI Tests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		2F1331782F7AC7FC0054D43C /* Notebook for Josh Watch App */ = {
+		2F13317D2F7AC7FC0054D43C /* DailyPlannerWatchOSApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F1331A32F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App" */;
-			buildPhases = (
-				2F1331772F7AC7FC0054D43C /* Resources */,
-				2F1331A22F7AC7FE0054D43C /* Embed Watch Content */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2F1331812F7AC7FC0054D43C /* PBXTargetDependency */,
-			);
-			name = "Notebook for Josh Watch App";
-			packageProductDependencies = (
-			);
-			productName = "Notebook for Josh Watch App";
-			productReference = 2F1331792F7AC7FC0054D43C /* Notebook for Josh Watch App.app */;
-			productType = "com.apple.product-type.application.watchapp2-container";
-		};
-		2F13317D2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2F13319F2F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App Watch App" */;
+			buildConfigurationList = 2F13319F2F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "DailyPlannerWatchOSApp" */;
 			buildPhases = (
 				2F13317A2F7AC7FC0054D43C /* Sources */,
 				2F13317B2F7AC7FC0054D43C /* Frameworks */,
@@ -358,18 +327,19 @@
 				2F1331CA2F7C56D90054D43C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				2F1331822F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */,
+				2F1331822F7AC7FC0054D43C /* DailyPlannerWatchOSApp */,
 			);
-			name = "Notebook for Josh Watch App Watch App";
+			name = DailyPlannerWatchOSApp;
 			packageProductDependencies = (
+				2FC237CE2F89307B00046917 /* DailyPlannerShared */,
 			);
 			productName = "Notebook for Josh Watch App Watch App";
-			productReference = 2F13317E2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App.app */;
+			productReference = 2F13317E2F7AC7FC0054D43C /* DailyPlannerWatchOSApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F13318C2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests */ = {
+		2F13318C2F7AC7FE0054D43C /* Josh - watchOS App - Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F1331A62F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App Watch AppTests" */;
+			buildConfigurationList = 2F1331A62F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Josh - watchOS App - Tests" */;
 			buildPhases = (
 				2F1331892F7AC7FE0054D43C /* Sources */,
 				2F13318A2F7AC7FE0054D43C /* Frameworks */,
@@ -383,16 +353,16 @@
 			fileSystemSynchronizedGroups = (
 				2F1331902F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests */,
 			);
-			name = "Notebook for Josh Watch App Watch AppTests";
+			name = "Josh - watchOS App - Tests";
 			packageProductDependencies = (
 			);
 			productName = "Notebook for Josh Watch App Watch AppTests";
-			productReference = 2F13318D2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests.xctest */;
+			productReference = 2F13318D2F7AC7FE0054D43C /* Josh - watchOS App - Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2F1331962F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests */ = {
+		2F1331962F7AC7FE0054D43C /* Josh - watchOS App - UI Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F1331A92F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App Watch AppUITests" */;
+			buildConfigurationList = 2F1331A92F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Josh - watchOS App - UI Tests" */;
 			buildPhases = (
 				2F1331932F7AC7FE0054D43C /* Sources */,
 				2F1331942F7AC7FE0054D43C /* Frameworks */,
@@ -406,16 +376,16 @@
 			fileSystemSynchronizedGroups = (
 				2F13319A2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests */,
 			);
-			name = "Notebook for Josh Watch App Watch AppUITests";
+			name = "Josh - watchOS App - UI Tests";
 			packageProductDependencies = (
 			);
 			productName = "Notebook for Josh Watch App Watch AppUITests";
-			productReference = 2F1331972F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests.xctest */;
+			productReference = 2F1331972F7AC7FE0054D43C /* Josh - watchOS App - UI Tests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		2F1331B62F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension */ = {
+		2F1331B62F7C56D70054D43C /* DailyPlannerWatchOSComplication */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F1331CD2F7C56D90054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App ComplicationExtension" */;
+			buildConfigurationList = 2F1331CD2F7C56D90054D43C /* Build configuration list for PBXNativeTarget "DailyPlannerWatchOSComplication" */;
 			buildPhases = (
 				2F1331B32F7C56D70054D43C /* Sources */,
 				2F1331B42F7C56D70054D43C /* Frameworks */,
@@ -426,13 +396,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2F1331BD2F7C56D70054D43C /* Notebook for Josh Watch App Complication */,
+				2F1331BD2F7C56D70054D43C /* DailyPlannerWatchOSComplication */,
 			);
-			name = "Notebook for Josh Watch App ComplicationExtension";
+			name = DailyPlannerWatchOSComplication;
 			packageProductDependencies = (
 			);
 			productName = "Notebook for Josh Watch App ComplicationExtension";
-			productReference = 2F1331B72F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension.appex */;
+			productReference = 2F1331B72F7C56D70054D43C /* DailyPlannerWatchOSComplication.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -456,9 +426,6 @@
 						CreatedOnToolsVersion = 26.4;
 						TestTargetID = 2F1331442F7ABCA50054D43C;
 					};
-					2F1331782F7AC7FC0054D43C = {
-						CreatedOnToolsVersion = 26.4;
-					};
 					2F13317D2F7AC7FC0054D43C = {
 						CreatedOnToolsVersion = 26.4;
 					};
@@ -475,7 +442,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2F1331402F7ABCA50054D43C /* Build configuration list for PBXProject "Notebook for Josh" */;
+			buildConfigurationList = 2F1331402F7ABCA50054D43C /* Build configuration list for PBXProject "Josh" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -489,14 +456,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F1331442F7ABCA50054D43C /* Notebook for Josh */,
-				2F1331552F7ABCA80054D43C /* Notebook for JoshTests */,
-				2F13315F2F7ABCA80054D43C /* Notebook for JoshUITests */,
-				2F1331782F7AC7FC0054D43C /* Notebook for Josh Watch App */,
-				2F13317D2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */,
-				2F13318C2F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppTests */,
-				2F1331962F7AC7FE0054D43C /* Notebook for Josh Watch App Watch AppUITests */,
-				2F1331B62F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension */,
+				2F1331442F7ABCA50054D43C /* DailyPlanneriOSApp */,
+				2F13317D2F7AC7FC0054D43C /* DailyPlannerWatchOSApp */,
+				2F1331B62F7C56D70054D43C /* DailyPlannerWatchOSComplication */,
+				2F1331552F7ABCA80054D43C /* Josh - iOS App - Tests */,
+				2F13315F2F7ABCA80054D43C /* Josh - iOS App - UI Tests */,
+				2F13318C2F7AC7FE0054D43C /* Josh - watchOS App - Tests */,
+				2F1331962F7AC7FE0054D43C /* Josh - watchOS App - UI Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -517,13 +483,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2F13315E2F7ABCA80054D43C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2F1331772F7AC7FC0054D43C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -615,32 +574,27 @@
 /* Begin PBXTargetDependency section */
 		2F1331582F7ABCA80054D43C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F1331442F7ABCA50054D43C /* Notebook for Josh */;
+			target = 2F1331442F7ABCA50054D43C /* DailyPlanneriOSApp */;
 			targetProxy = 2F1331572F7ABCA80054D43C /* PBXContainerItemProxy */;
 		};
 		2F1331622F7ABCA80054D43C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F1331442F7ABCA50054D43C /* Notebook for Josh */;
+			target = 2F1331442F7ABCA50054D43C /* DailyPlanneriOSApp */;
 			targetProxy = 2F1331612F7ABCA80054D43C /* PBXContainerItemProxy */;
-		};
-		2F1331812F7AC7FC0054D43C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2F13317D2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */;
-			targetProxy = 2F1331802F7AC7FC0054D43C /* PBXContainerItemProxy */;
 		};
 		2F13318F2F7AC7FE0054D43C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F13317D2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */;
+			target = 2F13317D2F7AC7FC0054D43C /* DailyPlannerWatchOSApp */;
 			targetProxy = 2F13318E2F7AC7FE0054D43C /* PBXContainerItemProxy */;
 		};
 		2F1331992F7AC7FE0054D43C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F13317D2F7AC7FC0054D43C /* Notebook for Josh Watch App Watch App */;
+			target = 2F13317D2F7AC7FC0054D43C /* DailyPlannerWatchOSApp */;
 			targetProxy = 2F1331982F7AC7FE0054D43C /* PBXContainerItemProxy */;
 		};
 		2F1331CA2F7C56D90054D43C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F1331B62F7C56D70054D43C /* Notebook for Josh Watch App ComplicationExtension */;
+			target = 2F1331B62F7C56D70054D43C /* DailyPlannerWatchOSComplication */;
 			targetProxy = 2F1331C92F7C56D90054D43C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -651,6 +605,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DailyPlanneriOSApp/DailyPlanneriOSApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
@@ -659,7 +614,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Notebook for Josh/Info.plist";
+				INFOPLIST_FILE = DailyPlanneriOSApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -675,7 +630,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.daily-planner-ios-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -696,6 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DailyPlanneriOSApp/DailyPlanneriOSApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
@@ -704,7 +660,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Notebook for Josh/Info.plist";
+				INFOPLIST_FILE = DailyPlanneriOSApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -720,7 +676,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.daily-planner-ios-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -863,7 +819,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				MACOSX_DEPLOYMENT_TARGET = 26.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-JoshTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.josh-ios-app-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
@@ -889,7 +845,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				MACOSX_DEPLOYMENT_TARGET = 26.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-JoshTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.josh-ios-app-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
@@ -914,7 +870,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				MACOSX_DEPLOYMENT_TARGET = 26.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-JoshUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.josh-ios-app-ui-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
@@ -939,7 +895,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
 				MACOSX_DEPLOYMENT_TARGET = 26.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-JoshUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.josh-ios-app-ui-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
@@ -959,13 +915,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Notebook for Josh Watch App Watch App/Notebook for Josh Watch App Watch App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = DailyPlannerWatchOSApp/DailyPlannerWatchOSApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Notebook for Josh Watch App";
+				INFOPLIST_KEY_CFBundleDisplayName = DailyPlannerWatchOSApp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -973,8 +930,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.daily-planner-watchos-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -993,13 +951,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Notebook for Josh Watch App Watch App/Notebook for Josh Watch App Watch App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = DailyPlannerWatchOSApp/DailyPlannerWatchOSApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Notebook for Josh Watch App";
+				INFOPLIST_KEY_CFBundleDisplayName = DailyPlannerWatchOSApp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1007,8 +966,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.daily-planner-watchos-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -1023,41 +983,6 @@
 			};
 			name = Release;
 		};
-		2F1331A42F7AC7FE0054D43C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
-				INFOPLIST_KEY_CFBundleDisplayName = "Notebook for Josh Watch App";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		2F1331A52F7AC7FE0054D43C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
-				INFOPLIST_KEY_CFBundleDisplayName = "Notebook for Josh Watch App";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		2F1331A72F7AC7FE0054D43C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1067,7 +992,7 @@
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App-Watch-AppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.josh-watchos-app-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
@@ -1090,7 +1015,7 @@
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App-Watch-AppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.josh-watchos-app-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
@@ -1113,7 +1038,7 @@
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App-Watch-AppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.josh-watchos-app-ui-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
@@ -1135,7 +1060,7 @@
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App-Watch-AppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.josh-watchos-app-ui-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
@@ -1160,8 +1085,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Notebook for Josh Watch App Complication/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Notebook for Josh Watch App Complication";
+				INFOPLIST_FILE = DailyPlannerWatchOSComplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DailyPlannerWatchOSComplication;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1170,7 +1095,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App.watchkitapp.Notebook-for-Josh-Watch-App-Complication";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.daily-planner-watchos-app.complication-watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1194,8 +1119,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4ZP3ZCKU6Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Notebook for Josh Watch App Complication/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Notebook for Josh Watch App Complication";
+				INFOPLIST_FILE = DailyPlannerWatchOSComplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DailyPlannerWatchOSComplication;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1204,7 +1129,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.Notebook-for-Josh-Watch-App.watchkitapp.Notebook-for-Josh-Watch-App-Complication";
+				PRODUCT_BUNDLE_IDENTIFIER = "joshclyde.daily-planner-watchos-app.complication-watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1222,7 +1147,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F1331402F7ABCA50054D43C /* Build configuration list for PBXProject "Notebook for Josh" */ = {
+		2F1331402F7ABCA50054D43C /* Build configuration list for PBXProject "Josh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F13316C2F7ABCA80054D43C /* Debug */,
@@ -1231,7 +1156,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F1331692F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh" */ = {
+		2F1331692F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "DailyPlanneriOSApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F13316A2F7ABCA80054D43C /* Debug */,
@@ -1240,7 +1165,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F13316E2F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "Notebook for JoshTests" */ = {
+		2F13316E2F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "Josh - iOS App - Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F13316F2F7ABCA80054D43C /* Debug */,
@@ -1249,7 +1174,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F1331712F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "Notebook for JoshUITests" */ = {
+		2F1331712F7ABCA80054D43C /* Build configuration list for PBXNativeTarget "Josh - iOS App - UI Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F1331722F7ABCA80054D43C /* Debug */,
@@ -1258,7 +1183,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F13319F2F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App Watch App" */ = {
+		2F13319F2F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "DailyPlannerWatchOSApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F1331A02F7AC7FE0054D43C /* Debug */,
@@ -1267,16 +1192,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F1331A32F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2F1331A42F7AC7FE0054D43C /* Debug */,
-				2F1331A52F7AC7FE0054D43C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2F1331A62F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App Watch AppTests" */ = {
+		2F1331A62F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Josh - watchOS App - Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F1331A72F7AC7FE0054D43C /* Debug */,
@@ -1285,7 +1201,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F1331A92F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App Watch AppUITests" */ = {
+		2F1331A92F7AC7FE0054D43C /* Build configuration list for PBXNativeTarget "Josh - watchOS App - UI Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F1331AA2F7AC7FE0054D43C /* Debug */,
@@ -1294,7 +1210,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F1331CD2F7C56D90054D43C /* Build configuration list for PBXNativeTarget "Notebook for Josh Watch App ComplicationExtension" */ = {
+		2F1331CD2F7C56D90054D43C /* Build configuration list for PBXNativeTarget "DailyPlannerWatchOSComplication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F1331CE2F7C56D90054D43C /* Debug */,
@@ -1304,6 +1220,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F78D9AD2F89439D00E71484 /* DailyPlannerShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DailyPlannerShared;
+		};
+		2FC237CE2F89307B00046917 /* DailyPlannerShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DailyPlannerShared;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F13313D2F7ABCA50054D43C /* Project object */;
 }

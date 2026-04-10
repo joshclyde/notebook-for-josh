@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F1331442F7ABCA50054D43C"
-               BuildableName = "Notebook for Josh.app"
-               BlueprintName = "Notebook for Josh"
-               ReferencedContainer = "container:Notebook for Josh.xcodeproj">
+               BuildableName = "DailyPlanneriOSApp.app"
+               BlueprintName = "DailyPlanneriOSApp"
+               ReferencedContainer = "container:Josh.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F1331552F7ABCA80054D43C"
-               BuildableName = "Notebook for JoshTests.xctest"
-               BlueprintName = "Notebook for JoshTests"
-               ReferencedContainer = "container:Notebook for Josh.xcodeproj">
+               BuildableName = "Josh - iOS App - Tests.xctest"
+               BlueprintName = "Josh - iOS App - Tests"
+               ReferencedContainer = "container:Josh.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F13315F2F7ABCA80054D43C"
-               BuildableName = "Notebook for JoshUITests.xctest"
-               BlueprintName = "Notebook for JoshUITests"
-               ReferencedContainer = "container:Notebook for Josh.xcodeproj">
+               BuildableName = "Josh - iOS App - UI Tests.xctest"
+               BlueprintName = "Josh - iOS App - UI Tests"
+               ReferencedContainer = "container:Josh.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F1331442F7ABCA50054D43C"
-            BuildableName = "Notebook for Josh.app"
-            BlueprintName = "Notebook for Josh"
-            ReferencedContainer = "container:Notebook for Josh.xcodeproj">
+            BuildableName = "DailyPlanneriOSApp.app"
+            BlueprintName = "DailyPlanneriOSApp"
+            ReferencedContainer = "container:Josh.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -87,9 +87,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F1331442F7ABCA50054D43C"
-            BuildableName = "Notebook for Josh.app"
-            BlueprintName = "Notebook for Josh"
-            ReferencedContainer = "container:Notebook for Josh.xcodeproj">
+            BuildableName = "DailyPlanneriOSApp.app"
+            BlueprintName = "DailyPlanneriOSApp"
+            ReferencedContainer = "container:Josh.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

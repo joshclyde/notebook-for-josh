@@ -7,7 +7,7 @@ import WidgetKit
 import SwiftUI
 
 @main
-struct Notebook_for_Josh_Watch_App_ComplicationBundle: WidgetBundle {
+struct DailyPlannerWatchOSComplicationWidgetBundle: WidgetBundle {
     var body: some Widget {
         RoutineComplication()
     }
