@@ -12,6 +12,7 @@ struct ContentView: View {
         NavigationStack {
             List {
                 NavigationLink("Routine", destination: RoutineListView())
+                NavigationLink("Daily Dozen", destination: DailyDozenView())
             }
             .navigationTitle("Daily Planner")
         }
