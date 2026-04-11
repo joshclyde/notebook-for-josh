@@ -54,9 +54,6 @@ struct ContentView: View {
             .sheet(isPresented: $showingAddRoutine) {
                 AddRoutineView()
             }
-//            .onAppear {
-//                seedDataIfNeeded()
-//            }
         }
     }
 
@@ -72,56 +69,6 @@ struct ContentView: View {
         for (index, routine) in reordered.enumerated() {
             routine.sortOrder = index
         }
-    }
-
-    private func seedDataIfNeeded() {
-        let seedKey = "routines_seeded_v1"
-        guard !UserDefaults.standard.bool(forKey: seedKey) else { return }
-        guard routines.isEmpty else {
-            UserDefaults.standard.set(true, forKey: seedKey)
-            return
-        }
-        context.insert(Routine(
-            title: "Wake Up",
-            tasks: [
-                "Get out of bed",
-                "Make the bed",
-                "Let Daisy out of the attic",
-                "Feed the cats",
-                "Drink water",
-                "Allergy medicine (Allegra)",
-                "Eat yogurt (while doing next tasks)",
-                "Refill cat's water",
-                "Put away dishes",
-                "Drink water",
-                "Scoop litter?",
-                "Vacuum first floor",
-                "Brush teeth",
-                "Deodorant",
-                "Style hair?",
-                "Coffee",
-                "Lotion hands",
-                "Sit down and plan for the day",
-            ],
-            sortOrder: 0
-        ))
-        context.insert(Routine(
-            title: "Wind Down",
-            tasks: [
-                "Clean the dishes",
-                "Run the dishwasher?",
-                "Clean the kitchen counter",
-                "Refill kitten water",
-                "Check kitten food in auto feeder",
-                "Floss & Brush Teeth",
-                "Clean face",
-                "Gameboy (15 minutes)",
-                "Read book",
-                "Put away kitten",
-            ],
-            sortOrder: 1
-        ))
-        UserDefaults.standard.set(true, forKey: seedKey)
     }
 }
 

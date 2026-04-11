@@ -24,16 +24,16 @@ struct EditRoutineView: View {
                             .focused($focusedIndex, equals: index)
                             .onSubmit { insertTask(after: index) }
                             .onChange(of: tasks[index]) { syncTasks() }
-                        if tasks.count > 1 {
-                            Button {
-                                tasks.remove(at: index)
-                                syncTasks()
-                            } label: {
-                                Image(systemName: "minus.circle.fill")
-                                    .foregroundStyle(.red)
-                            }
-                            .buttonStyle(.plain)
-                        }
+//                        if tasks.count > 1 {
+//                            Button {
+//                                tasks.remove(at: index)
+//                                syncTasks()
+//                            } label: {
+//                                Image(systemName: "minus.circle.fill")
+//                                    .foregroundStyle(.red)
+//                            }
+//                            .buttonStyle(.plain)
+//                        }
                     }
                 }
                 .onMove { tasks.move(fromOffsets: $0, toOffset: $1); syncTasks() }
